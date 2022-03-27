@@ -6,8 +6,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="2.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Users\Anderson\Desktop\Minha Api Completa\01 MinhaAPICompleta 2.x\src\DevIO.Business\DevIO.Business.csproj" />
+    <ProjectReference Include="..\..\..\..\Users\Anderson\Desktop\Minha Api Completa\01 MinhaAPICompleta 2.x\src\DevIO.Data\DevIO.Data.csproj" />
   </ItemGroup>
 
 </Project>
