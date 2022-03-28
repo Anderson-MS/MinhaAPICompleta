@@ -54,7 +54,7 @@ namespace DevIO.Api.Controllers
             return Ok(fornecedor);
         }
 
-        [HttpPut("id:guid")]
+        [HttpPut("{id:guid}")]
         public async Task<ActionResult<FornecedorViewModel>> Atualizar(Guid id, FornecedorViewModel fornecedorViewModel)
         {
             if (id != fornecedorViewModel.Id) return BadRequest();
